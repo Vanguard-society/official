@@ -6,7 +6,6 @@
     <title>啓睿會 Vanguard Society | 香港權威專業提拔尖子中心</title>
     <meta name="description" content="啓睿會 Vanguard Society 為香港0-18歲學童提供權威專業提拔服務，舉辦醫學、法律、科學、鋼琴及畫畫等高階比賽。最新活動：幼稚園級別即場1小時畫畫比賽，勝出者作品將於銅鑼灣時代廣場展出。">
 
-    <!-- Canonical URL -->
     <link rel="canonical" href="#">
 
     <!-- Open Graph Tags -->
@@ -14,13 +13,11 @@
     <meta property="og:title" content="啓睿會 Vanguard Society | 權威專業提拔尖子中心">
     <meta property="og:description" content="專為0-18歲舉辦各類專業比賽及教育服務，最新幼稚園畫畫比賽熱烈報名中，勝出作品將於銅鑼灣時代廣場展出。">
     <meta property="og:url" content="#">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Vanguard+Society+Event">
 
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="啓睿會 Vanguard Society">
     <meta name="twitter:description" content="香港0-18歲學童專業提拔中心，發掘未來醫學、法律、科學及藝術精英。">
-    <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Vanguard+Society+Event">
 
     <!-- JSON-LD Schema -->
     <script type="application/ld+json">
@@ -131,7 +128,7 @@
         nav a {
             color: var(--white);
             text-decoration: none;
-            font-weight: 5rem;
+            font-weight: 500;
             font-size: 0.95rem;
             transition: color 0.2s;
         }
@@ -241,7 +238,7 @@
             transform: translateY(-2px);
         }
 
-        /* 統計與信任數據標籤 */
+        /* 信任數據標籤 */
         .trust-metrics {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -345,17 +342,12 @@
         }
 
         .event-img-wrapper {
-            background: #E2E8F0;
+            background: #0A2540;
+            min-height: 380px;
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden;
-        }
-
-        .event-img-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            padding: 2rem;
         }
 
         /* 服務與領域 (Grid) */
@@ -628,8 +620,20 @@
                     <a href="#register" class="btn-primary" style="text-align: center;">填表預約參賽名額</a>
                 </div>
 
+                <!-- 方案二：純內嵌 SVG 矢量圖示區塊 -->
                 <div class="event-img-wrapper">
-                    <img src="https://via.placeholder.com/800x600.png?text=Vanguard+Society+Drawing+Competition" alt="幼稚園畫畫比賽宣傳圖 - 兒童專心畫畫創作">
+                    <svg width="100%" height="240" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="啓睿會 幼稚園畫畫比賽 宣傳視覺圖">
+                        <rect width="400" height="240" rx="12" fill="#1E3A8A" fill-opacity="0.5"/>
+                        <circle cx="200" cy="85" r="32" fill="#C5A059" fill-opacity="0.2"/>
+                        <path d="M160 135L185 100L210 125L240 85L280 145H120L160 135Z" fill="#C5A059"/>
+                        <circle cx="150" cy="75" r="16" fill="#C5A059"/>
+                        <text x="200" y="185" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+                            啓睿會 幼稚園畫畫比賽
+                        </text>
+                        <text x="200" y="208" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#94A3B8" text-anchor="middle">
+                            勝出作品將於銅鑼灣時代廣場展出
+                        </text>
+                    </svg>
                 </div>
             </article>
         </section>
