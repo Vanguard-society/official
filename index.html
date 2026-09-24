@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>啓睿會 Vanguard Society | 香港權威專業提拔尖子中心</title>
-    <meta name="description" content="啓睿會 Vanguard Society 為香港0-18歲學童提供權威專業提拔服務，舉辦醫學、法律、科學、鋼琴及畫畫等高階比賽。最新活動：幼稚園級別即場1小時畫畫比賽。">
+    <meta name="description" content="啓睿會 Vanguard Society 為香港0-18歲學童提供權威專業提拔服務，舉辦醫學、法律、科學、鋼琴及畫畫等高階比賽。最新活動：幼稚園級別即場1小時畫畫比賽，勝出者作品將於銅鑼灣時代廣場展出。">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="#">
@@ -12,7 +12,7 @@
     <!-- Open Graph Tags -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="啓睿會 Vanguard Society | 權威專業提拔尖子中心">
-    <meta property="og:description" content="專為0-18歲舉辦各類專業比賽及教育服務，最新幼稚園畫畫比賽熱烈報名中，勝出作品將於時代廣場展出。">
+    <meta property="og:description" content="專為0-18歲舉辦各類專業比賽及教育服務，最新幼稚園畫畫比賽熱烈報名中，勝出作品將於銅鑼灣時代廣場展出。">
     <meta property="og:url" content="#">
     <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Vanguard+Society+Event">
 
@@ -22,7 +22,7 @@
     <meta name="twitter:description" content="香港0-18歲學童專業提拔中心，發掘未來醫學、法律、科學及藝術精英。">
     <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Vanguard+Society+Event">
 
-    <!-- JSON-LD Schema (ProfessionalService / EducationalOrganization) -->
+    <!-- JSON-LD Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -45,267 +45,729 @@
     </script>
 
     <style>
-        /* CSS 變數與基本設定，確保高對比度 (WCAG AA) */
         :root {
-            --primary-color: #003366; /* 深藍色 - 提供專業感及足夠的文字對比度 */
-            --secondary-bg: #f9f9fa;
-            --text-main: #1a1a1a;
-            --text-light: #ffffff;
-            --focus-color: #ff9900;
-            --border-color: #cccccc;
+            --primary: #0A2540;       /* 權威深海藍 (WCAG AAA 對比) */
+            --primary-light: #1E3A8A;
+            --accent: #C5A059;        /* 尊貴金 */
+            --accent-hover: #A37006;
+            --bg-light: #F8FAFC;
+            --text-dark: #0F172A;
+            --text-muted: #475569;
+            --white: #FFFFFF;
+            --border: #E2E8F0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 10px 25px -5px rgba(0,0,0,0.08);
         }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            color: var(--text-main);
+
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            background-color: #ffffff;
         }
 
-        /* 無障礙焦點樣式 (Keyboard Tab 操作) */
-        a:focus, button:focus, input:focus, select:focus, textarea:focus {
-            outline: 3px solid var(--focus-color);
-            outline-offset: 2px;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: var(--text-dark);
+            background-color: var(--white);
+            line-height: 1.7;
         }
 
-        /* 導覽列 (語意化 header & nav) */
+        /* 鍵盤 Focus 樣式 (WCAG AA) */
+        a:focus, button:focus, input:focus, select:focus {
+            outline: 3px solid var(--accent);
+            outline-offset: 3px;
+        }
+
+        /* 頂部公告欄 */
+        .announcement-bar {
+            background-color: var(--accent);
+            color: var(--primary);
+            text-align: center;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        /* 導覽列 */
         header {
-            background-color: var(--primary-color);
-            color: var(--text-light);
-            padding: 1rem 2rem;
+            background-color: var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        .header-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1.2rem 1.5rem;
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
+            color: var(--white);
+            font-size: 1.4rem;
+            font-weight: 800;
             text-decoration: none;
-            color: var(--text-light);
-        }
-        
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+            letter-spacing: 0.5px;
             display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.8rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 5rem;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        .btn-nav {
+            background-color: var(--accent);
+            color: var(--primary) !important;
+            padding: 0.5rem 1.2rem;
+            border-radius: 4px;
+            font-weight: 700 !important;
+        }
+
+        .btn-nav:hover {
+            background-color: #D4AF37;
+        }
+
+        /* 主要內容容器 */
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        /* Hero 區塊 */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--white);
+            border-radius: 12px;
+            padding: 4rem 2.5rem;
+            margin-top: 2rem;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(197, 160, 89, 0.2);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            line-height: 1.3;
+            margin-bottom: 1.2rem;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            max-width: 750px;
+            margin: 0 auto 2rem auto;
+            color: #E2E8F0;
+        }
+
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: var(--primary);
+            padding: 0.85rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background-color: #D4AF37;
+            transform: translateY(-2px);
+        }
+
+        /* 統計與信任數據標籤 */
+        .trust-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: -2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .metric-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .metric-card h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.2rem;
+        }
+
+        .metric-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* 賽事亮點卡片 (最新活動) */
+        .event-card-container {
+            background: var(--white);
+            border: 2px solid var(--accent);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+
+        .event-info {
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .event-tag {
+            background-color: #FEF3C7;
+            color: #92400E;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            width: fit-content;
+            margin-bottom: 1rem;
+        }
+
+        .event-info h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .event-highlights {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .event-highlights li {
+            position: relative;
+            padding-left: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: var(--text-dark);
+            font-size: 1rem;
+        }
+
+        .event-highlights li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .price-box {
+            background-color: var(--bg-light);
+            padding: 1rem 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .price-amount {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .event-img-wrapper {
+            background: #E2E8F0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .event-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 服務與領域 (Grid) */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 1.5rem;
         }
-        
-        nav a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-size: 1rem;
-            padding: 0.5rem;
+
+        .service-card {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: transform 0.2s;
         }
-        
-        nav a:hover {
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .service-card h3 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* 報名步驟 */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        .step-item {
+            padding: 1.5rem;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.2rem;
+            margin: 0 auto 1rem auto;
+        }
+
+        /* FAQ 常見問題 */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .faq-item {
+            background: var(--bg-light);
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+        }
+
+        .faq-item h3 {
+            color: var(--primary);
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-item p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* 表單區塊 */
+        .registration-section {
+            background-color: var(--bg-light);
+            border-radius: 12px;
+            padding: 3rem;
+            border: 1px solid var(--border);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 1rem;
+            background-color: var(--white);
+        }
+
+        input:focus {
+            border-color: var(--primary);
+        }
+
+        .form-notice {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        /* 頁尾 */
+        footer {
+            background-color: var(--primary);
+            color: #94A3B8;
+            padding: 3rem 1.5rem 2rem 1.5rem;
+            margin-top: 4rem;
+            text-align: center;
+            border-top: 4px solid var(--accent);
+        }
+
+        footer h3 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        footer a:hover {
             text-decoration: underline;
         }
 
-        /* 主要內容區 (語意化 main) */
-        main {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem;
-        }
-        
-        section {
-            margin-bottom: 4rem;
-        }
-        
-        h1, h2, h3 {
-            color: var(--primary-color);
+        .copyright {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
         }
 
-        /* 關於我們區塊 */
-        .about-box {
-            background-color: var(--secondary-bg);
-            padding: 2rem;
-            border-left: 6px solid var(--primary-color);
-            border-radius: 4px;
+        /* RWD 響應式調整 */
+        @media (max-width: 868px) {
+            .event-card-container {
+                grid-template-columns: 1fr;
+            }
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
-        /* 比賽亮點 (語意化 article) */
-        article.event-card {
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 2rem;
-            background-color: #ffffff;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-        
-        .event-img {
-            width: 100%;
-            max-width: 500px;
-            height: auto;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            display: block;
-        }
-        
-        .price-tag {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: var(--text-light);
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            font-weight: bold;
-            margin: 1rem 0;
-        }
-
-        /* 報名表單 */
-        .form-group {
-            margin-bottom: 1.25rem;
-        }
-        
-        label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-        
-        input[type="text"], input[type="email"], input[type="tel"] {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            font-size: 1rem;
-            box-sizing: border-box;
-        }
-        
-        button[type="submit"] {
-            background-color: var(--primary-color);
-            color: var(--text-light);
-            border: none;
-            padding: 0.75rem 2rem;
-            font-size: 1rem;
-            font-weight: bold;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        
-        button[type="submit"]:hover {
-            background-color: #002244;
-        }
-        
-        .payment-note {
-            font-size: 0.9rem;
-            color: #555555;
-            margin-top: 0.5rem;
-        }
-
-        /* 頁尾 (語意化 footer) */
-        footer {
-            background-color: var(--secondary-bg);
-            border-top: 1px solid var(--border-color);
-            text-align: center;
-            padding: 2rem 1rem;
-            color: #333333;
-        }
-
-        /* RWD 手機版設定 */
         @media (max-width: 768px) {
-            header {
+            .header-container {
                 flex-direction: column;
-                text-align: center;
+                gap: 1rem;
             }
             nav ul {
-                flex-direction: column;
-                gap: 0;
-                margin-top: 1rem;
+                gap: 1rem;
             }
-            nav a {
-                padding: 0.75rem 0;
-                display: block;
-                border-bottom: 1px solid rgba(255,255,255,0.1);
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero {
+                padding: 2.5rem 1.5rem;
+            }
+            .registration-section {
+                padding: 1.5rem;
             }
         }
     </style>
 </head>
 <body>
 
+    <!-- 頂部動態公告 -->
+    <div class="announcement-bar">
+        🏆 最新賽事消息：幼稚園畫畫比賽熱烈報名中！優勝作品將於銅鑼灣時代廣場展出。
+    </div>
+
+    <!-- 導覽列 -->
     <header>
-        <a href="#" class="logo">啓睿會 Vanguard Society</a>
-        <nav aria-label="主要導覽">
-            <ul>
-                <li><a href="#about">關於我們</a></li>
-                <li><a href="#services">專業服務</a></li>
-                <li><a href="#event">最新比賽</a></li>
-                <li><a href="#register">線上報名</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <a href="#" class="logo">
+                啓睿會 <span>Vanguard Society</span>
+            </a>
+            <nav aria-label="主要導覽">
+                <ul>
+                    <li><a href="#about">關於我們</a></li>
+                    <li><a href="#services">專業領域</a></li>
+                    <li><a href="#event">焦點賽事</a></li>
+                    <li><a href="#faq">常見問題</a></li>
+                    <li><a href="#register" class="btn-nav">立即報名</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="about" class="about-box">
-            <h1>培養未來的領袖與專才</h1>
-            <p><strong>啓睿會 Vanguard Society</strong> 是香港權威的專業提拔尖子中心。我們致力於發掘並培養 0 至 18 歲青少年的潛能。透過舉辦各領域的專業比賽及教育服務，我們為下一代提供展示才華與專業成長的最佳平台。</p>
+        <!-- Hero 主視覺區塊 -->
+        <section class="hero" id="about">
+            <span class="hero-badge">香港權威專業提拔尖子中心</span>
+            <h1>發掘潛能．締造未來精英</h1>
+            <p>啓睿會 Vanguard Society 專為 0 至 18 歲兒童及青少年提供專業提拔服務。我們透過涵蓋醫學、法律、科學與藝術的頂級比賽平台，培育下一代具備國際視野的優秀人才。</p>
+            <div class="hero-cta">
+                <a href="#register" class="btn-primary">為孩子報名最新賽事</a>
+            </div>
         </section>
 
-        <section id="services">
-            <h2>我們的專業領域</h2>
-            <p>我們定期舉辦涵蓋多個學科及藝術範疇的專業比賽與優質教育課程，包括：</p>
-            <ul>
-                <li><strong>醫學與科學</strong>：從小培養邏輯思維與探究精神。</li>
-                <li><strong>法律</strong>：建立批判性思考與卓越的表達能力。</li>
-                <li><strong>音樂與藝術</strong>：鋼琴及畫畫比賽，由專業評審嚴格把關，提供具公信力的評級與展出機會。</li>
-            </ul>
-        </section>
+        <!-- 數據與信任標籤 -->
+        <div class="trust-metrics" aria-label="機構特點">
+            <div class="metric-card">
+                <h3>0-18歲</h3>
+                <p>全方位尖子提拔體系</p>
+            </div>
+            <div class="metric-card">
+                <h3>時代廣場</h3>
+                <p>地標級公開展出平台</p>
+            </div>
+            <div class="metric-card">
+                <h3>專業評審</h3>
+                <p>業界權威嚴格評級</p>
+            </div>
+            <div class="metric-card">
+                <h3>現場付費</h3>
+                <p>比賽當日收取・透明安心</p>
+            </div>
+        </div>
 
+        <!-- 最新焦點比賽 -->
         <section id="event">
-            <h2>最新活動焦點</h2>
-            <article class="event-card" aria-labelledby="event-title">
-                <h3 id="event-title">幼稚園級別：即場 1 小時畫畫比賽</h3>
-                <!-- 圖片加上 descriptive alt 屬性 -->
-                <img src="https://via.placeholder.com/800x400.png?text=Vanguard+Society+Drawing+Competition" alt="幼稚園畫畫比賽宣傳圖 - 兒童正在專心繪畫創作" class="event-img">
-                <p>專為幼稚園學童設計的現場藝術挑戰。參賽者將在 1 小時內即場創作，由業界專業評審進行嚴格評級，確保比賽的公平與專業性。</p>
-                <p>🏆 <strong>特別獎勵：</strong> 勝出者的優秀作品將於<strong>銅鑼灣時代廣場</strong>公開展出，讓大眾見證孩子們的藝術天賦！</p>
-                <div class="price-tag">報名費用：$330 HKD</div>
-                <p class="payment-note">※ 註：本網站不進行線上收款，報名費用將於比賽當日於活動現場收取。</p>
+            <div class="section-header">
+                <h2>最新焦點賽事</h2>
+                <p>讓孩子的才華在香港核心地標光芒四射</p>
+            </div>
+
+            <article class="event-card-container" aria-labelledby="event-title">
+                <div class="event-info">
+                    <span class="event-tag">🔥 熱烈報名中 | 幼稚園級別</span>
+                    <h3 id="event-title">幼稚園即場 1 小時畫畫比賽</h3>
+                    <p>給孩子一個展現藝術天賦的舞台！本比賽採取即場 1 小時創作形式，由業界專業評審親自進行嚴格評級，確保公正性與專業權威。</p>
+                    
+                    <ul class="event-highlights">
+                        <li><strong>展覽榮譽：</strong> 勝出作品將於<strong>銅鑼灣時代廣場</strong>公開展出。</li>
+                        <li><strong>專業評級：</strong> 由權威藝術評審親自現場評分及給予評語。</li>
+                        <li><strong>即場創作：</strong> 考驗並激發孩子的即興創意與專注力。</li>
+                    </ul>
+
+                    <div class="price-box">
+                        <div class="price-amount">HKD $330</div>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+                            ※ 網站不設線上收款，費用將於比賽當日現場收取。
+                        </p>
+                    </div>
+
+                    <a href="#register" class="btn-primary" style="text-align: center;">填表預約參賽名額</a>
+                </div>
+
+                <div class="event-img-wrapper">
+                    <img src="https://via.placeholder.com/800x600.png?text=Vanguard+Society+Drawing+Competition" alt="幼稚園畫畫比賽宣傳圖 - 兒童專心畫畫創作">
+                </div>
             </article>
         </section>
 
-        <section id="register">
-            <h2>立即報名</h2>
-            <p>請填寫以下表單為您的孩子報名參與最新的畫畫比賽。提交後我們將透過電郵與您聯繫確認細節。</p>
-            <form action="https://api.web3forms.com/submit" method="POST" aria-label="報名表單">
-                <!-- Web3Forms Access Key -->
-                <input type="hidden" name="access_key" value="c4925121-bf57-490f-872e-09fb857c964d">
-                
-                <!-- Email Subject -->
-                <input type="hidden" name="subject" value="啓睿會 - 新畫畫比賽報名">
+        <!-- 我們的專業領域 -->
+        <section id="services">
+            <div class="section-header">
+                <h2>四大專業培育範疇</h2>
+                <p>全方位啟發多維度天賦與跨領域思維</p>
+            </div>
 
-                <div class="form-group">
-                    <label for="parentName">家長姓名</label>
-                    <input type="text" id="parentName" name="parentName" required aria-required="true">
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🩺 醫學與生命科學</h3>
+                    <p>啟蒙邏輯推理與人道精神，透過工作坊與競賽體驗基礎醫學概念與科學探究。</p>
                 </div>
-                <div class="form-group">
-                    <label for="childName">參賽學童姓名</label>
-                    <input type="text" id="childName" name="childName" required aria-required="true">
+                <div class="service-card">
+                    <h3>⚖️ 法律與邏輯辯證</h3>
+                    <p>培養思辨力、表達能力與批判性思維，建立清晰的邏輯架構與公民素養。</p>
                 </div>
-                <div class="form-group">
-                    <label for="email">聯絡電郵</label>
-                    <input type="email" id="email" name="email" required aria-required="true">
+                <div class="service-card">
+                    <h3>🎹 鋼琴與音樂藝術</h3>
+                    <p>舉辦高規格樂器比賽與大師級評級，提供高標準的舞台演繹與音樂交流體驗。</p>
                 </div>
-                <div class="form-group">
-                    <label for="phone">聯絡電話</label>
-                    <input type="tel" id="phone" name="phone" required aria-required="true">
+                <div class="service-card">
+                    <h3>🎨 視覺與創意藝術</h3>
+                    <p>提供專業繪畫比賽及頂級地標展覽機會，建立自信心，獲取權威認可。</p>
                 </div>
-                <button type="submit">提交報名表</button>
-                <p class="payment-note">提交表單即代表您同意於比賽當日現場繳交 $330 報名費。</p>
-            </form>
+            </div>
+        </section>
+
+        <!-- 簡單 3 步報名流程 -->
+        <section>
+            <div class="section-header">
+                <h2>簡單 3 步完成參賽</h2>
+                <p>流程透明，報名快捷</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>線上填表預約</h3>
+                    <p>填寫下方報名表單，鎖定參賽名額。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>到場參賽及繳費</h3>
+                    <p>比賽當日前往現場參賽，並現場繳交 $330 報名費。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>權威評級與展出</h3>
+                    <p>由專業評審評級，勝出作品展出於時代廣場。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常見問題 FAQ -->
+        <section id="faq">
+            <div class="section-header">
+                <h2>家長常見問題</h2>
+                <p>解答您的疑問，讓孩子無後顧之憂參賽</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Q: 報名費用 $330 如何繳交？</h3>
+                    <p>答：為確保家長安心，本網站不進行任何線上轉帳。報名費 $330 將於比賽當日現場收取。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: 勝出作品的時代廣場展覽詳情？</h3>
+                    <p>答：經專業評審評定獲獎的優勝作品，將安排於銅鑼灣時代廣場進行公開展出，具體展期將由電郵另行通知。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: 比賽當日需要自備畫具嗎？</h3>
+                    <p>答：提交表單後，我們將透過電郵寄發詳細參賽指南及注意事項，說明現場提供與需自備之工具。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: 填表後多久會收到確認？</h3>
+                    <p>答：提交表單後，我們的團隊將於 1-2 個工作天內透過電郵發送報名確認信。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 報名表單區塊 -->
+        <section id="register">
+            <div class="registration-section">
+                <div class="section-header" style="margin-bottom: 2rem;">
+                    <h2>立即為孩子報名賽事</h2>
+                    <p>名額有限，額滿即止。請填寫資料完成預約。</p>
+                </div>
+
+                <form action="https://api.web3forms.com/submit" method="POST" aria-label="賽事報名表單">
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="c4925121-bf57-490f-872e-09fb857c964d">
+                    <!-- Email Subject -->
+                    <input type="hidden" name="subject" value="【啓睿會】新幼稚園畫畫比賽報名通知">
+
+                    <div class="form-group">
+                        <label for="parentName">家長姓名 *</label>
+                        <input type="text" id="parentName" name="parentName" placeholder="例如：陳大文" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="childName">參賽學童姓名 *</label>
+                        <input type="text" id="childName" name="childName" placeholder="例如：陳小明" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">聯絡電郵 *</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">聯絡電話 / WhatsApp *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="9123 4567" required aria-required="true">
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1rem;">提交報名（現場付費 $330）</button>
+
+                    <p class="form-notice">
+                        🔒 您的個人資料將嚴格保密，僅用於本次賽事聯絡。提交表單即代表您同意比賽當日現場繳交報名費。
+                    </p>
+                </form>
+            </div>
         </section>
     </main>
 
+    <!-- 頁尾 -->
     <footer>
-        <h2>聯絡我們</h2>
-        <p>如有任何查詢，歡迎電郵至：<a href="mailto:info@vanguardsociety-edu-hk.org">info@vanguardsociety-edu-hk.org</a></p>
-        <p>&copy; 2026 啓睿會 Vanguard Society. 版權所有。</p>
+        <h3>啓睿會 Vanguard Society</h3>
+        <p>香港權威專業提拔尖子中心</p>
+        <p style="margin-top: 1rem;">
+            查詢電郵：<a href="mailto:info@vanguardsociety-edu-hk.org">info@vanguardsociety-edu-hk.org</a>
+        </p>
+        <div class="copyright">
+            &copy; 2026 啓睿會 Vanguard Society. 版權所有。
+        </div>
     </footer>
 
 </body>
