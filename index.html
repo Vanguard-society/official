@@ -273,8 +273,13 @@
         <section id="register">
             <h2>立即報名</h2>
             <p>請填寫以下表單為您的孩子報名參與最新的畫畫比賽。提交後我們將透過電郵與您聯繫確認細節。</p>
-            <!-- 更改 form action，避免 HTTP 405 錯誤 -->
-            <form action="mailto:info@vanguardsociety-edu-hk.org" method="GET" enctype="text/plain" aria-label="報名表單">
+            <form action="https://api.web3forms.com/submit" method="POST" aria-label="報名表單">
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="c4925121-bf57-490f-872e-09fb857c964d">
+                
+                <!-- Email Subject -->
+                <input type="hidden" name="subject" value="啓睿會 - 新畫畫比賽報名">
+
                 <div class="form-group">
                     <label for="parentName">家長姓名</label>
                     <input type="text" id="parentName" name="parentName" required aria-required="true">
@@ -292,7 +297,7 @@
                     <input type="tel" id="phone" name="phone" required aria-required="true">
                 </div>
                 <button type="submit">提交報名表</button>
-                <p class="payment-note">提交表單即代表您同意於比賽當日現場繳交 $330 報名費。點擊提交後將開啟您的預設電子郵件用戶端。</p>
+                <p class="payment-note">提交表單即代表您同意於比賽當日現場繳交 $330 報名費。</p>
             </form>
         </section>
     </main>
