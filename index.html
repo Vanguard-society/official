@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>啓睿會 Vanguard Society | 香港權威專業提拔尖子中心</title>
-    <meta name="description" content="啓睿會 Vanguard Society 為香港0-18歲學童提供權威專業提拔服務，舉辦醫學、法律、科學、鋼琴及畫畫等高階比賽。最新活動：幼稚園級別即場1小時畫畫比賽，勝出者作品將於銅鑼灣時代廣場展出。">
+    <title>啓睿會 Vanguard Society | K2級別 3分鐘英語即場講故事比賽</title>
+    <meta name="description" content="啓睿會 Vanguard Society 舉辦 K2級別 3分鐘英語即場講故事比賽。現場設專業攝影錄影、權威評審，全場頒發參賽證書。設有冠亞軍及隆重頒獎典禮，冠亞軍照片更將公開登上港鐵廣告！名額有限，立即預約。">
 
     <link rel="canonical" href="#">
 
     <!-- Open Graph Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="啓睿會 Vanguard Society | 權威專業提拔尖子中心">
-    <meta property="og:description" content="專為0-18歲舉辦各類專業比賽及教育服務，最新幼稚園畫畫比賽熱烈報名中，勝出作品將於銅鑼灣時代廣場展出。">
+    <meta property="og:title" content="啓睿會 Vanguard Society | K2級別 3分鐘英語即場講故事比賽">
+    <meta property="og:description" content="故事類型不限！現場專業攝錄、權威評審、冠亞軍照片榮登港鐵廣告，全場獲頒證書。比賽設有頒獎典禮，名額有限！">
     <meta property="og:url" content="#">
 
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="啓睿會 Vanguard Society">
-    <meta name="twitter:description" content="香港0-18歲學童專業提拔中心，發掘未來醫學、法律、科學及藝術精英。">
+    <meta name="twitter:title" content="啓睿會 Vanguard Society | K2級別 3分鐘英語即場講故事比賽">
+    <meta name="twitter:description" content="專為K2學童打造的英語講故事舞台，冠亞軍照片登港鐵廣告，現場專業攝錄與頒獎典禮。">
 
     <!-- JSON-LD Schema -->
     <script type="application/ld+json">
@@ -25,18 +25,26 @@
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
       "name": "啓睿會 Vanguard Society",
-      "description": "香港權威專業提拔尖子中心，對象為0-18歲學童，舉辦各類專業比賽及教育服務。",
+      "description": "香港權威專業提拔尖子中心，專為兒童及青少年提供專業賽事與展演平台。",
       "email": "info@vanguardsociety-edu-hk.org",
       "url": "https://vanguardsociety-edu-hk.org",
       "event": {
         "@type": "Event",
-        "name": "幼稚園級別即場1小時畫畫比賽",
-        "offers": {
-          "@type": "Offer",
-          "price": "330",
-          "priceCurrency": "HKD",
-          "description": "費用於比賽當日現場收取"
-        }
+        "name": "K2級別 3分鐘英語即場講故事比賽",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "參賽費用",
+            "price": "360",
+            "priceCurrency": "HKD"
+          },
+          {
+            "@type": "Offer",
+            "name": "觀衆門票",
+            "price": "230",
+            "priceCurrency": "HKD"
+          }
+        ]
       }
     }
     </script>
@@ -200,7 +208,7 @@
         }
 
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             line-height: 1.3;
             margin-bottom: 1.2rem;
         }
@@ -258,7 +266,7 @@
         }
 
         .metric-card h3 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: var(--primary);
             margin-bottom: 0.2rem;
         }
@@ -315,7 +323,7 @@
             padding-left: 1.8rem;
             margin-bottom: 0.8rem;
             color: var(--text-dark);
-            font-size: 1rem;
+            font-size: 0.98rem;
         }
 
         .event-highlights li::before {
@@ -329,21 +337,33 @@
 
         .price-box {
             background-color: var(--bg-light);
-            padding: 1rem 1.5rem;
+            padding: 1.2rem 1.5rem;
             border-radius: 6px;
-            border-left: 4px solid var(--primary);
+            border-left: 4px solid var(--accent);
             margin-bottom: 1.5rem;
         }
 
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.3rem;
+        }
+
+        .price-title {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
         .price-amount {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 800;
             color: var(--primary);
         }
 
         .event-img-wrapper {
             background: #0A2540;
-            min-height: 380px;
+            min-height: 400px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -454,7 +474,7 @@
             font-size: 0.95rem;
         }
 
-        input[type="text"], input[type="email"], input[type="tel"] {
+        input[type="text"], input[type="email"], input[type="tel"], select {
             width: 100%;
             padding: 0.85rem 1rem;
             border: 1px solid var(--border);
@@ -463,7 +483,7 @@
             background-color: var(--white);
         }
 
-        input:focus {
+        input:focus, select:focus {
             border-color: var(--primary);
         }
 
@@ -524,7 +544,7 @@
                 gap: 1rem;
             }
             .hero h1 {
-                font-size: 1.8rem;
+                font-size: 1.7rem;
             }
             .hero {
                 padding: 2.5rem 1.5rem;
@@ -539,7 +559,7 @@
 
     <!-- 頂部動態公告 -->
     <div class="announcement-bar">
-        🏆 最新賽事消息：幼稚園畫畫比賽熱烈報名中！優勝作品將於銅鑼灣時代廣場展出。
+        🏆 K2 級別 3分鐘英語即場講故事比賽熱烈報名中！冠亞軍照片將榮登港鐵廣告展示！
     </div>
 
     <!-- 導覽列 -->
@@ -564,30 +584,30 @@
         <!-- Hero 主視覺區塊 -->
         <section class="hero" id="about">
             <span class="hero-badge">香港權威專業提拔尖子中心</span>
-            <h1>發掘潛能．締造未來精英</h1>
-            <p>啓睿會 Vanguard Society 專為 0 至 18 歲兒童及青少年提供專業提拔服務。我們透過涵蓋醫學、法律、科學與藝術的頂級比賽平台，培育下一代具備國際視野的優秀人才。</p>
+            <h1>3分鐘 K2級別即場英語講故事比賽</h1>
+            <p>啟發兒童演說潛力與英語表達自信！給孩子一個璀璨奪目的舞台，由權威評審親自評分，現場星級攝影團隊記錄，冠亞軍得主照片更將公開登上港鐵廣告！</p>
             <div class="hero-cta">
-                <a href="#register" class="btn-primary">為孩子報名最新賽事</a>
+                <a href="#register" class="btn-primary">預約 K2 參賽名額</a>
             </div>
         </section>
 
         <!-- 數據與信任標籤 -->
-        <div class="trust-metrics" aria-label="機構特點">
+        <div class="trust-metrics" aria-label="賽事亮點">
             <div class="metric-card">
-                <h3>0-18歲</h3>
-                <p>全方位尖子提拔體系</p>
+                <h3>港鐵廣告展示</h3>
+                <p>冠亞軍榮譽宣傳</p>
             </div>
             <div class="metric-card">
-                <h3>時代廣場</h3>
-                <p>地標級公開展出平台</p>
+                <h3>專業現場攝錄</h3>
+                <p>星級攝影師拍攝紀錄</p>
             </div>
             <div class="metric-card">
-                <h3>專業評審</h3>
-                <p>業界權威嚴格評級</p>
+                <h3>全場獲頒證書</h3>
+                <p>專業評審現場評分</p>
             </div>
             <div class="metric-card">
-                <h3>現場付費</h3>
-                <p>比賽當日收取・透明安心</p>
+                <h3>設頒獎典禮</h3>
+                <p>隆重儀式頒發冠亞軍</p>
             </div>
         </div>
 
@@ -595,43 +615,59 @@
         <section id="event">
             <div class="section-header">
                 <h2>最新焦點賽事</h2>
-                <p>讓孩子的才華在香港核心地標光芒四射</p>
+                <p>讓孩子的演說天賦與自信風采，在全港地標盛大展現</p>
             </div>
 
             <article class="event-card-container" aria-labelledby="event-title">
                 <div class="event-info">
-                    <span class="event-tag">🔥 熱烈報名中 | 幼稚園級別</span>
-                    <h3 id="event-title">幼稚園即場 1 小時畫畫比賽</h3>
-                    <p>給孩子一個展現藝術天賦的舞台！本比賽採取即場 1 小時創作形式，由業界專業評審親自進行嚴格評級，確保公正性與專業權威。</p>
+                    <span class="event-tag">🔥 熱烈報名中 | K2 級別專屬</span>
+                    <h3 id="event-title">3分鐘 K2級別即場英語講故事比賽</h3>
+                    <p>專為 K2 學童設計的高規格演說賽事！故事類型完全不限，鼓勵孩子發揮創意與演說自信。比賽設有隆重頒獎典禮，更特別安排現場專業攝影師及錄影師，捕捉每位參賽者的精彩瞬間。</p>
                     
                     <ul class="event-highlights">
-                        <li><strong>展覽榮譽：</strong> 勝出作品將於<strong>銅鑼灣時代廣場</strong>公開展出。</li>
-                        <li><strong>專業評級：</strong> 由權威藝術評審親自現場評分及給予評語。</li>
-                        <li><strong>即場創作：</strong> 考驗並激發孩子的即興創意與專注力。</li>
+                        <li><strong>港鐵廣告榮譽：</strong> 冠軍及亞軍得主照片將公開登上<strong>港鐵廣告</strong>展出。</li>
+                        <li><strong>專業現場攝錄：</strong> 配備專業攝影師與錄影師，記錄寶貴演說片段。</li>
+                        <li><strong>權威評審及證書：</strong> 專業評審現場評分點評，<strong>所有參賽者均獲頒證書</strong>。</li>
+                        <li><strong>隆重頒獎典禮：</strong> 設冠、亞軍榮譽獎項，並舉辦現場頒獎禮。</li>
+                        <li><strong>自由創意題材：</strong> 限時 3 分鐘，全程英語，故事類型完全不限。</li>
                     </ul>
 
                     <div class="price-box">
-                        <div class="price-amount">HKD $330</div>
-                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
-                            ※ 網站不設線上收款，費用將於比賽當日現場收取。
+                        <div class="price-row">
+                            <span class="price-title">參賽費用：</span>
+                            <span class="price-amount">HKD $360</span>
+                        </div>
+                        <div class="price-row" style="margin-top: 0.4rem;">
+                            <span class="price-title">觀眾門票：</span>
+                            <span class="price-amount" style="font-size: 1.1rem; color: #475569;">HKD $230 / 張</span>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem; border-top: 1px dashed var(--border); padding-top: 0.4rem;">
+                            ※ 賽事名額與觀衆席位有限，額滿即止。費用於比賽當日現場收取。
                         </p>
                     </div>
 
-                    <a href="#register" class="btn-primary" style="text-align: center;">填表預約參賽名額</a>
+                    <a href="#register" class="btn-primary" style="text-align: center;">填表預約參賽與門票</a>
                 </div>
 
-                <!-- 方案二：純內嵌 SVG 矢量圖示區塊 -->
+                <!-- 內嵌 SVG 矢量宣傳圖示 -->
                 <div class="event-img-wrapper">
-                    <svg width="100%" height="240" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="啓睿會 幼稚園畫畫比賽 宣傳視覺圖">
-                        <rect width="400" height="240" rx="12" fill="#1E3A8A" fill-opacity="0.5"/>
-                        <circle cx="200" cy="85" r="32" fill="#C5A059" fill-opacity="0.2"/>
-                        <path d="M160 135L185 100L210 125L240 85L280 145H120L160 135Z" fill="#C5A059"/>
-                        <circle cx="150" cy="75" r="16" fill="#C5A059"/>
-                        <text x="200" y="185" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
-                            啓睿會 幼稚園畫畫比賽
+                    <svg width="100%" height="260" viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="K2英語講故事比賽 宣傳圖">
+                        <rect width="400" height="260" rx="12" fill="#1E3A8A" fill-opacity="0.5"/>
+                        <!-- Crown / Trophy Graphic -->
+                        <path d="M160 110L180 85L200 105L220 85L240 110L230 135H170L160 110Z" fill="#C5A059"/>
+                        <circle cx="200" cy="70" r="10" fill="#C5A059"/>
+                        <circle cx="170" cy="80" r="7" fill="#C5A059"/>
+                        <circle cx="230" cy="80" r="7" fill="#C5A059"/>
+                        <!-- Microphone Icon -->
+                        <rect x="194" y="142" width="12" height="25" rx="6" fill="#FFFFFF"/>
+                        <path d="M188 152C188 158.627 193.373 164 200 164C206.627 164 212 158.627 212 152" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="200" y1="164" x2="200" y2="175" stroke="#FFFFFF" stroke-width="3"/>
+                        
+                        <text x="200" y="210" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+                            K2 3-Min English Storytelling
                         </text>
-                        <text x="200" y="208" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#94A3B8" text-anchor="middle">
-                            勝出作品將於銅鑼灣時代廣場展出
+                        <text x="200" y="233" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold" fill="#C5A059" text-anchor="middle">
+                            冠亞軍照片榮登港鐵廣告 | 現場專業攝錄
                         </text>
                     </svg>
                 </div>
@@ -647,20 +683,20 @@
 
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>🩺 醫學與生命科學</h3>
-                    <p>啟蒙邏輯推理與人道精神，透過工作坊與競賽體驗基礎醫學概念與科學探究。</p>
+                    <h3>🗣️ 英語演說與故事演繹</h3>
+                    <p>培育幼童英語口語自信、肢體語言與舞姿颱風，透過賽事訓練表達力與臨場應變能力。</p>
                 </div>
                 <div class="service-card">
-                    <h3>⚖️ 法律與邏輯辯證</h3>
-                    <p>培養思辨力、表達能力與批判性思維，建立清晰的邏輯架構與公民素養。</p>
+                    <h3>⚖️ 邏輯思辨與辯證</h3>
+                    <p>培養思辨力、表達能力與批判性思維，建立清晰的邏輯架構與語言組織天賦。</p>
                 </div>
                 <div class="service-card">
-                    <h3>🎹 鋼琴與音樂藝術</h3>
-                    <p>舉辦高規格樂器比賽與大師級評級，提供高標準的舞台演繹與音樂交流體驗。</p>
+                    <h3>🩺 醫學與科學啟蒙</h3>
+                    <p>啟蒙邏輯推理與探究精神，透過主題比賽體驗基礎科學與跨學科知識。</p>
                 </div>
                 <div class="service-card">
-                    <h3>🎨 視覺與創意藝術</h3>
-                    <p>提供專業繪畫比賽及頂級地標展覽機會，建立自信心，獲取權威認可。</p>
+                    <h3>🎨 藝術與視覺創作</h3>
+                    <p>提供專業藝術賽事及地標展覽機會，建立孩子自我肯定，獲取業界權威認可。</p>
                 </div>
             </div>
         </section>
@@ -669,24 +705,24 @@
         <section>
             <div class="section-header">
                 <h2>簡單 3 步完成參賽</h2>
-                <p>流程透明，報名快捷</p>
+                <p>流程透明，預約快捷</p>
             </div>
 
             <div class="steps-container">
                 <div class="step-item">
                     <div class="step-number">1</div>
                     <h3>線上填表預約</h3>
-                    <p>填寫下方報名表單，鎖定參賽名額。</p>
+                    <p>填寫下方報名表單，預約參賽名額及觀衆門票。</p>
                 </div>
                 <div class="step-item">
                     <div class="step-number">2</div>
                     <h3>到場參賽及繳費</h3>
-                    <p>比賽當日前往現場參賽，並現場繳交 $330 報名費。</p>
+                    <p>比賽當日前往現場參賽，現場繳交參賽費及門票費。</p>
                 </div>
                 <div class="step-item">
                     <div class="step-number">3</div>
-                    <h3>權威評級與展出</h3>
-                    <p>由專業評審評級，勝出作品展出於時代廣場。</p>
+                    <h3>頒獎與港鐵廣告</h3>
+                    <p>現場參與頒獎典禮獲頒證書，冠亞軍榮登港鐵廣告。</p>
                 </div>
             </div>
         </section>
@@ -695,25 +731,25 @@
         <section id="faq">
             <div class="section-header">
                 <h2>家長常見問題</h2>
-                <p>解答您的疑問，讓孩子無後顧之憂參賽</p>
+                <p>解答您的疑問，讓孩子安心登台展現實力</p>
             </div>
 
             <div class="faq-grid">
                 <div class="faq-item">
-                    <h3>Q: 報名費用 $330 如何繳交？</h3>
-                    <p>答：為確保家長安心，本網站不進行任何線上轉帳。報名費 $330 將於比賽當日現場收取。</p>
+                    <h3>Q: 故事類型與語言有限制嗎？</h3>
+                    <p>答：本比賽限時 3 分鐘，全程需使用**英語**演譯，故事類型完全不限（如童話、寓言、自創故事均可），讓孩子自由發揮創意。</p>
                 </div>
                 <div class="faq-item">
-                    <h3>Q: 勝出作品的時代廣場展覽詳情？</h3>
-                    <p>答：經專業評審評定獲獎的優勝作品，將安排於銅鑼灣時代廣場進行公開展出，具體展期將由電郵另行通知。</p>
+                    <h3>Q: 冠亞軍登上港鐵廣告的安排？</h3>
+                    <p>答：獲頒冠軍及亞軍的學童，其高畫質參賽照片將由本會安排公開刊登於港鐵廣告展示，具體展示地點與期數將於頒獎典禮後公佈通知。</p>
                 </div>
                 <div class="faq-item">
-                    <h3>Q: 比賽當日需要自備畫具嗎？</h3>
-                    <p>答：提交表單後，我們將透過電郵寄發詳細參賽指南及注意事項，說明現場提供與需自備之工具。</p>
+                    <h3>Q: 現場攝影及錄影如何發放？</h3>
+                    <p>答：大會安排了專業攝影師及錄影師進行現場拍攝，活動後會透過電郵免費提供高畫質相片下載連結給參賽家長。</p>
                 </div>
                 <div class="faq-item">
-                    <h3>Q: 填表後多久會收到確認？</h3>
-                    <p>答：提交表單後，我們的團隊將於 1-2 個工作天內透過電郵發送報名確認信。</p>
+                    <h3>Q: 費用如何繳交？（參賽費 $360 / 門票 $230）</h3>
+                    <p>答：本網站不進行任何線上轉帳。所有費用（參賽費 $360 及預訂之觀眾門票 $230/張）均於比賽當日現場報到時繳交。</p>
                 </div>
             </div>
         </section>
@@ -722,15 +758,15 @@
         <section id="register">
             <div class="registration-section">
                 <div class="section-header" style="margin-bottom: 2rem;">
-                    <h2>立即為孩子報名賽事</h2>
-                    <p>名額有限，額滿即止。請填寫資料完成預約。</p>
+                    <h2>立即預約參賽與觀衆門票</h2>
+                    <p>名額有限，額滿即止。請填寫資料鎖定名額。</p>
                 </div>
 
                 <form action="https://api.web3forms.com/submit" method="POST" aria-label="賽事報名表單">
                     <!-- Web3Forms Access Key -->
                     <input type="hidden" name="access_key" value="c4925121-bf57-490f-872e-09fb857c964d">
                     <!-- Email Subject -->
-                    <input type="hidden" name="subject" value="【啓睿會】新幼稚園畫畫比賽報名通知">
+                    <input type="hidden" name="subject" value="【啓睿會】K2英語即場講故事比賽報名通知">
 
                     <div class="form-group">
                         <label for="parentName">家長姓名 *</label>
@@ -738,7 +774,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="childName">參賽學童姓名 *</label>
+                        <label for="childName">參賽學童姓名 (K2) *</label>
                         <input type="text" id="childName" name="childName" placeholder="例如：陳小明" required aria-required="true">
                     </div>
 
@@ -752,10 +788,21 @@
                         <input type="tel" id="phone" name="phone" placeholder="9123 4567" required aria-required="true">
                     </div>
 
-                    <button type="submit" class="btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1rem;">提交報名（現場付費 $330）</button>
+                    <div class="form-group">
+                        <label for="tickets">預訂觀衆門票數量 ($230/張) *</label>
+                        <select id="tickets" name="tickets" required aria-required="true">
+                            <option value="1張">1 張門票 ($230)</option>
+                            <option value="2張" selected>2 張門票 ($460)</option>
+                            <option value="3張">3 張門票 ($690)</option>
+                            <option value="4張">4 張門票 ($920)</option>
+                            <option value="僅參賽不購票">僅參賽（不預訂額外門票）</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1rem;">提交預約（現場付費：參賽費$360 + 門票）</button>
 
                     <p class="form-notice">
-                        🔒 您的個人資料將嚴格保密，僅用於本次賽事聯絡。提交表單即代表您同意比賽當日現場繳交報名費。
+                        🔒 您的個人資料將嚴格保密。提交表單即代表您預約參賽名額，費用將於比賽當日現場收取。
                     </p>
                 </form>
             </div>
