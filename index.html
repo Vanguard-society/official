@@ -3,21 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>啓睿會 Vanguard Society | K2級別 2分鐘英語即場故事演說賽事</title>
-    <meta name="description" content="啓睿會 Vanguard Society 舉辦 K2級別 2分鐘英語即場講故事比賽。賽事於演講廳舉行，由外籍司儀主持及外籍專業評審評分。現場設專業攝影拍攝，全場獲頒參與證書，冠亞軍照片將登上港鐵廣告展示。">
+    <title>啓睿會 Vanguard Society | K2級別 2分鐘英語即場講故事比賽</title>
+    <meta name="description" content="啓睿會舉辦 K2級別 2分鐘英語即場講故事比賽。由外籍司儀與外籍評審主持評分，於演講廳舉行。現場設專業攝影，全場頒發參與證書，設冠亞軍及頒獎典禮，得獎者照片將刊登於港鐵廣告。">
 
     <link rel="canonical" href="#">
 
     <!-- Open Graph Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="啓睿會 Vanguard Society | K2級別 2分鐘英語即場故事演說賽事">
-    <meta property="og:description" content="演講廳專業賽事，外籍司儀主持與外籍評判現場評審。故事題材不限，全場頒發參與證書，冠亞軍榮譽照片登上港鐵廣告展示。">
+    <meta property="og:title" content="啓睿會 Vanguard Society | K2級別 2分鐘英語即場講故事比賽">
+    <meta property="og:description" content="演講廳舉行。外籍司儀主持與外籍專業評審評分。全場獲發參與證書，冠亞軍照片將刊登於港鐵廣告。">
     <meta property="og:url" content="#">
-
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="啓睿會 Vanguard Society | K2級別 2分鐘英語即場故事演說賽事">
-    <meta name="twitter:description" content="專為 K2 學童打造之全英語演說舞台，國際化評判陣容，演講廳盛大舉行。">
 
     <!-- JSON-LD Schema -->
     <script type="application/ld+json">
@@ -25,7 +20,7 @@
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
       "name": "啓睿會 Vanguard Society",
-      "description": "專業提拔尖子學術機構，為兒童及青少年提供專業賽事與展演平台。",
+      "description": "提供專業兒童及青少年賽事與展演平台。",
       "email": "info@vanguardsociety-edu-hk.org",
       "url": "https://vanguardsociety-edu-hk.org",
       "event": {
@@ -51,17 +46,16 @@
 
     <style>
         :root {
-            --primary: #0A2540;       /* 深海藍 */
+            --primary: #0A2540;
             --primary-light: #1E3A8A;
-            --accent: #C5A059;        /* 典雅金 */
-            --accent-hover: #A37006;
+            --accent: #C5A059;
             --bg-light: #F8FAFC;
             --text-dark: #0F172A;
             --text-muted: #475569;
             --white: #FFFFFF;
-            --border: #CBD5E1;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-            --shadow-md: 0 10px 25px -5px rgba(0,0,0,0.05);
+            --border: #E2E8F0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 10px 25px -5px rgba(0,0,0,0.08);
         }
 
         * {
@@ -82,25 +76,12 @@
             outline-offset: 3px;
         }
 
-        /* 頂部賽事資訊欄 */
-        .announcement-bar {
-            background-color: var(--primary);
-            color: var(--accent);
-            text-align: center;
-            padding: 0.6rem 1rem;
-            font-size: 0.9rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            border-bottom: 1px solid rgba(197, 160, 89, 0.3);
-        }
-
-        /* 導覽列 */
         header {
             background-color: var(--primary);
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
         }
 
         .header-container {
@@ -114,7 +95,7 @@
 
         .logo {
             color: var(--white);
-            font-size: 1.35rem;
+            font-size: 1.3rem;
             font-weight: 700;
             text-decoration: none;
             letter-spacing: 0.5px;
@@ -122,7 +103,6 @@
 
         .logo span {
             color: var(--accent);
-            font-weight: 400;
         }
 
         nav ul {
@@ -137,7 +117,6 @@
             text-decoration: none;
             font-weight: 500;
             font-size: 0.95rem;
-            transition: color 0.2s;
         }
 
         nav a:hover {
@@ -145,19 +124,13 @@
         }
 
         .btn-nav {
-            border: 1px solid var(--accent);
-            color: var(--accent) !important;
-            padding: 0.45rem 1.1rem;
-            border-radius: 4px;
-            transition: all 0.2s;
-        }
-
-        .btn-nav:hover {
             background-color: var(--accent);
             color: var(--primary) !important;
+            padding: 0.5rem 1.2rem;
+            border-radius: 4px;
+            font-weight: 700 !important;
         }
 
-        /* 主要內容 */
         main {
             max-width: 1100px;
             margin: 0 auto;
@@ -177,7 +150,6 @@
             font-size: 1.8rem;
             color: var(--primary);
             margin-bottom: 0.5rem;
-            font-weight: 700;
         }
 
         .section-header p {
@@ -185,11 +157,10 @@
             font-size: 1rem;
         }
 
-        /* Hero 區塊 */
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             color: var(--white);
-            border-radius: 8px;
+            border-radius: 12px;
             padding: 3.5rem 2.5rem;
             margin-top: 2rem;
             box-shadow: var(--shadow-md);
@@ -201,40 +172,36 @@
             background: rgba(197, 160, 89, 0.15);
             color: var(--accent);
             border: 1px solid var(--accent);
-            padding: 0.35rem 0.9rem;
-            border-radius: 4px;
+            padding: 0.3rem 0.9rem;
+            border-radius: 50px;
             font-size: 0.85rem;
             font-weight: 600;
             margin-bottom: 1.2rem;
-            letter-spacing: 0.5px;
         }
 
         .hero h1 {
             font-size: 2.1rem;
-            line-height: 1.35;
+            line-height: 1.3;
             margin-bottom: 1rem;
-            font-weight: 700;
         }
 
         .hero p {
             font-size: 1.05rem;
-            max-width: 780px;
-            margin: 0 auto 2rem auto;
+            max-width: 750px;
+            margin: 0 auto 1.8rem auto;
             color: #E2E8F0;
-            line-height: 1.8;
         }
 
         .btn-primary {
             background-color: var(--accent);
             color: var(--primary);
-            padding: 0.8rem 2rem;
-            border-radius: 4px;
+            padding: 0.85rem 2rem;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: 700;
             font-size: 1rem;
             border: none;
             cursor: pointer;
-            transition: background-color 0.2s, transform 0.2s;
             display: inline-block;
         }
 
@@ -242,8 +209,7 @@
             background-color: #D4AF37;
         }
 
-        /* 指標卡片 */
-        .trust-metrics {
+        .spec-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 1.2rem;
@@ -252,32 +218,30 @@
             z-index: 10;
         }
 
-        .metric-card {
+        .spec-card {
             background: var(--white);
             border: 1px solid var(--border);
-            padding: 1.3rem;
-            border-radius: 6px;
+            padding: 1.2rem;
+            border-radius: 8px;
             text-align: center;
             box-shadow: var(--shadow-sm);
         }
 
-        .metric-card h3 {
+        .spec-card h3 {
             font-size: 1.2rem;
             color: var(--primary);
             margin-bottom: 0.3rem;
         }
 
-        .metric-card p {
+        .spec-card p {
             color: var(--text-muted);
             font-size: 0.88rem;
         }
 
-        /* 賽事詳情卡片 */
         .event-card-container {
             background: var(--white);
             border: 1px solid var(--border);
-            border-top: 4px solid var(--accent);
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
             box-shadow: var(--shadow-md);
             display: grid;
@@ -290,18 +254,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-        }
-
-        .event-tag {
-            background-color: #F1F5F9;
-            color: var(--primary);
-            padding: 0.25rem 0.75rem;
-            border-radius: 4px;
-            font-size: 0.82rem;
-            font-weight: 600;
-            width: fit-content;
-            margin-bottom: 1rem;
-            border: 1px solid var(--border);
         }
 
         .event-info h3 {
@@ -317,28 +269,26 @@
 
         .event-highlights li {
             position: relative;
-            padding-left: 1.6rem;
-            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            margin-bottom: 0.7rem;
             color: var(--text-dark);
             font-size: 0.95rem;
-            line-height: 1.6;
         }
 
         .event-highlights li::before {
             content: "•";
             position: absolute;
-            left: 0.2rem;
+            left: 0;
             color: var(--accent);
             font-weight: bold;
-            font-size: 1.3rem;
-            line-height: 1;
+            font-size: 1.2rem;
         }
 
         .price-box {
             background-color: var(--bg-light);
             padding: 1.2rem 1.5rem;
             border-radius: 6px;
-            border-left: 3px solid var(--primary);
+            border-left: 4px solid var(--primary);
             margin-bottom: 1.5rem;
         }
 
@@ -352,11 +302,10 @@
         .price-title {
             font-weight: 600;
             color: var(--primary);
-            font-size: 0.95rem;
         }
 
         .price-amount {
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             font-weight: 700;
             color: var(--primary);
         }
@@ -370,111 +319,41 @@
             padding: 2rem;
         }
 
-        /* 領域介紹 */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 1.2rem;
-        }
-
-        .service-card {
-            background-color: var(--bg-light);
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            padding: 1.8rem;
-        }
-
-        .service-card h3 {
-            color: var(--primary);
-            font-size: 1.15rem;
-            margin-bottom: 0.6rem;
-        }
-
-        .service-card p {
-            color: var(--text-muted);
-            font-size: 0.92rem;
-            line-height: 1.65;
-        }
-
-        /* 流程步驟 */
-        .steps-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1.5rem;
-            text-align: center;
-        }
-
-        .step-item {
-            padding: 1.5rem;
-            background: var(--bg-light);
-            border-radius: 6px;
-            border: 1px solid var(--border);
-        }
-
-        .step-number {
-            width: 42px;
-            height: 42px;
-            background-color: var(--primary);
-            color: var(--accent);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.1rem;
-            margin: 0 auto 1rem auto;
-        }
-
-        .step-item h3 {
-            font-size: 1.05rem;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .step-item p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        /* FAQ */
         .faq-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1.2rem;
+            gap: 1.5rem;
         }
 
         .faq-item {
             background: var(--bg-light);
-            border-radius: 6px;
+            border-radius: 8px;
             padding: 1.5rem;
             border: 1px solid var(--border);
         }
 
         .faq-item h3 {
             color: var(--primary);
-            font-size: 1.02rem;
+            font-size: 1rem;
             margin-bottom: 0.5rem;
-            font-weight: 700;
         }
 
         .faq-item p {
             color: var(--text-muted);
-            font-size: 0.92rem;
-            line-height: 1.65;
+            font-size: 0.9rem;
         }
 
-        /* 表單區塊 */
         .registration-section {
             background-color: var(--bg-light);
-            border-radius: 8px;
-            padding: 2.8rem;
+            border-radius: 12px;
+            padding: 2.5rem;
             border: 1px solid var(--border);
-            max-width: 780px;
+            max-width: 750px;
             margin: 0 auto;
         }
 
         .form-group {
-            margin-bottom: 1.3rem;
+            margin-bottom: 1.2rem;
         }
 
         label {
@@ -482,41 +361,36 @@
             font-weight: 600;
             color: var(--primary);
             margin-bottom: 0.4rem;
-            font-size: 0.92rem;
+            font-size: 0.9rem;
         }
 
         input[type="text"], input[type="email"], input[type="tel"], select {
             width: 100%;
-            padding: 0.75rem 0.9rem;
+            padding: 0.8rem 1rem;
             border: 1px solid var(--border);
-            border-radius: 4px;
+            border-radius: 6px;
             font-size: 0.95rem;
             background-color: var(--white);
-            color: var(--text-dark);
         }
 
         .form-notice {
-            font-size: 0.82rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
             margin-top: 1rem;
             text-align: center;
-            line-height: 1.6;
         }
 
-        /* 頁尾 */
         footer {
             background-color: var(--primary);
             color: #94A3B8;
-            padding: 3rem 1.5rem 2rem 1.5rem;
+            padding: 2.5rem 1.5rem 2rem 1.5rem;
             margin-top: 4rem;
             text-align: center;
-            border-top: 3px solid var(--accent);
         }
 
         footer h3 {
             color: var(--white);
             margin-bottom: 0.8rem;
-            font-size: 1.15rem;
         }
 
         footer a {
@@ -524,15 +398,11 @@
             text-decoration: none;
         }
 
-        footer a:hover {
-            text-decoration: underline;
-        }
-
         .copyright {
-            margin-top: 2rem;
+            margin-top: 1.8rem;
             padding-top: 1.2rem;
             border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.82rem;
+            font-size: 0.85rem;
         }
 
         @media (max-width: 868px) {
@@ -552,9 +422,6 @@
             .hero h1 {
                 font-size: 1.6rem;
             }
-            .hero {
-                padding: 2.5rem 1.2rem;
-            }
             .registration-section {
                 padding: 1.5rem;
             }
@@ -562,11 +429,6 @@
     </style>
 </head>
 <body>
-
-    <!-- 頂部賽事公告欄 -->
-    <div class="announcement-bar">
-        K2級別 2分鐘英語即場故事演說賽事 ｜ 專業演講廳場地 ‧ 國際化評判陣容
-    </div>
 
     <!-- 導覽列 -->
     <header>
@@ -576,66 +438,65 @@
             </a>
             <nav aria-label="主要導覽">
                 <ul>
-                    <li><a href="#about">機構簡介</a></li>
-                    <li><a href="#event">賽事架構</a></li>
-                    <li><a href="#services">培育範疇</a></li>
-                    <li><a href="#faq">賽事須知</a></li>
-                    <li><a href="#register" class="btn-nav">預約名額</a></li>
+                    <li><a href="#about">關於機構</a></li>
+                    <li><a href="#details">賽事詳情</a></li>
+                    <li><a href="#faq">常見問題</a></li>
+                    <li><a href="#register" class="btn-nav">參賽預約</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Hero 主視覺區塊 -->
+        <!-- Hero 區塊 -->
         <section class="hero" id="about">
-            <span class="hero-badge">學術演說與表達力展演平台</span>
+            <span class="hero-badge">學術演講賽事</span>
             <h1>K2級別 2分鐘英語即場講故事比賽</h1>
-            <p>本賽事旨在構建專業的英語演說環境，引導幼童培養語感、自信及臨場展現力。賽事特別安排於專業演講廳進行，並由外籍司儀與外籍專業評判團現場主持及評分。</p>
-            <div class="hero-cta">
-                <a href="#register" class="btn-primary">預約 K2 參賽席位</a>
+            <p>本賽事專為 K2 學童舉辦，於演講廳進行。邀請外籍司儀主持及外籍專業評審現場評分，並安排專業攝影師紀錄參賽過程。</p>
+            <div>
+                <a href="#register" class="btn-primary">前往報名預約</a>
             </div>
         </section>
 
-        <!-- 數據與信任標籤 -->
-        <div class="trust-metrics" aria-label="賽事特色">
-            <div class="metric-card">
-                <h3>國際化評審陣容</h3>
-                <p>外籍司儀及外籍評判</p>
+        <!-- 規格標籤 -->
+        <div class="spec-grid" aria-label="賽事特點">
+            <div class="spec-card">
+                <h3>外籍司儀與評判</h3>
+                <p>專業現場主持與評判陣容</p>
             </div>
-            <div class="metric-card">
-                <h3>演講廳專業場地</h3>
-                <p>標準演講廳現場競逐</p>
+            <div class="spec-card">
+                <h3>演講廳場地</h3>
+                <p>標準演講廳舞台環境</p>
             </div>
-            <div class="metric-card">
-                <h3>港鐵廣告榮譽展示</h3>
-                <p>冠亞軍得主影像展示</p>
+            <div class="spec-card">
+                <h3>專業現場攝影</h3>
+                <p>攝影師記錄比賽過程</p>
             </div>
-            <div class="metric-card">
-                <h3>專業影像紀錄</h3>
-                <p>現場專業攝影師拍攝</p>
+            <div class="spec-card">
+                <h3>港鐵廣告展示</h3>
+                <p>冠亞軍獲獎照片公開展示</p>
             </div>
         </div>
 
-        <!-- 最新焦點比賽 -->
-        <section id="event">
+        <!-- 賽事詳情 -->
+        <section id="details">
             <div class="section-header">
-                <h2>賽事細則與亮點</h2>
-                <p>為學童提供嚴謹、尊榮且具啟發性的演說體驗</p>
+                <h2>賽事細則與安排</h2>
+                <p>提供標準且透明的比賽安排與收費說明</p>
             </div>
 
-            <article class="event-card-container" aria-labelledby="event-title">
+            <article class="event-card-container">
                 <div class="event-info">
-                    <span class="event-tag">K2 級別專屬賽事</span>
-                    <h3 id="event-title">2分鐘英語即場講故事比賽</h3>
-                    <p>比賽全程於專業演講廳舉行，打造正式且具儀式感的舞台環境。參賽學童需於 2 分鐘內以英語進行即場故事演繹，主題不設限制，讓學童自由發揮想像力與語言組織能力。</p>
-                    
+                    <h3>賽事規範與獎項設置</h3>
+                    <p>比賽旨在提供正式的英語口語展演平台，故事類型不限，由外籍專業評審進行現場獨立評分。</p>
+
                     <ul class="event-highlights">
-                        <li><strong>專業評審及主持：</strong> 邀請外籍司儀（Native MC）全程主持，並由外籍專業評判團進行嚴謹現場評分。</li>
-                        <li><strong>廣泛題材與時限：</strong> 每位學童演說時間為 2 分鐘，全程使用英語，故事題材完全不限。</li>
-                        <li><strong>港鐵廣告榮譽：</strong> 賽事冠亞軍得主之精彩相片，將安排於港鐵廣告面板公開展示。</li>
-                        <li><strong>隆重頒獎典禮：</strong> 現場舉行正式頒獎典禮，頒發冠軍及亞軍獎項。</li>
-                        <li><strong>參與證書及攝錄：</strong> 全體參賽學童均獲頒發「參與證書」；現場設專業攝影師記錄演說風采。</li>
+                        <li><strong>賽事時間：</strong> 每位參賽者限時 2 分鐘（全程英語）。</li>
+                        <li><strong>故事類型：</strong> 題材不限（如童話、自創或寓言故事）。</li>
+                        <li><strong>專業陣容：</strong> 由外籍司儀主持，並由外籍評審進行評判。</li>
+                        <li><strong>證書與獎項：</strong> 所有參賽者均獲發「參與證書」；賽事設有冠軍、亞軍及現場頒獎典禮。</li>
+                        <li><strong>宣傳榮譽：</strong> 冠軍及亞軍得獎者照片將刊登於港鐵廣告。</li>
+                        <li><strong>現場配套：</strong> 安排專業攝影師於演講廳現場進行拍攝。</li>
                     </ul>
 
                     <div class="price-box">
@@ -647,113 +508,55 @@
                             <span class="price-title">觀衆門票：</span>
                             <span class="price-amount" style="font-size: 1.05rem; color: #475569;">HKD $280 / 張</span>
                         </div>
-                        <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.6rem; border-top: 1px stroke var(--border); padding-top: 0.4rem;">
-                            ※ 演講廳席位有限，名額按登記順序處理。相關費用於賽事當日現場辦理。
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem; border-top: 1px dashed var(--border); padding-top: 0.4rem;">
+                            ※ 賽事名額與觀衆席位有限。費用於比賽當日現場收取。
                         </p>
                     </div>
 
-                    <a href="#register" class="btn-primary" style="text-align: center;">登記預約名額</a>
+                    <a href="#register" class="btn-primary" style="text-align: center;">填寫預約表格</a>
                 </div>
 
-                <!-- SVG 宣傳圖示 -->
                 <div class="event-img-wrapper">
-                    <svg width="100%" height="260" viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="K2英語講故事比賽 示意圖">
-                        <rect width="400" height="260" rx="6" fill="#1E3A8A" fill-opacity="0.4"/>
-                        <!-- Podium / Hall Graphic -->
-                        <path d="M140 180H260V185H140V180Z" fill="#C5A059"/>
-                        <path d="M170 140H230V180H170V140Z" fill="#FFFFFF" fill-opacity="0.9"/>
-                        <!-- Microphone Icon -->
-                        <rect x="195" y="95" width="10" height="22" rx="5" fill="#C5A059"/>
-                        <path d="M189 105C189 111.075 193.925 116 200 116C206.075 116 211 111.075 211 105" stroke="#C5A059" stroke-width="2.5" stroke-linecap="round"/>
-                        <line x1="200" y1="116" x2="200" y2="128" stroke="#C5A059" stroke-width="2.5"/>
-                        
-                        <text x="200" y="215" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="middle">
+                    <svg width="100%" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="賽事圖示">
+                        <rect width="400" height="250" rx="8" fill="#1E3A8A" fill-opacity="0.4"/>
+                        <path d="M160 100L180 75L200 95L220 75L240 100L230 125H170L160 100Z" fill="#C5A059"/>
+                        <rect x="194" y="132" width="12" height="25" rx="6" fill="#FFFFFF"/>
+                        <path d="M188 142C188 148.6 193.3 154 200 154C206.6 154 212 148.6 212 142" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="200" y1="154" x2="200" y2="165" stroke="#FFFFFF" stroke-width="3"/>
+                        <text x="200" y="200" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
                             K2 2-Min English Storytelling
                         </text>
-                        <text x="200" y="235" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#C5A059" text-anchor="middle">
-                            Lecture Hall Venue ‧ Native English Judges
+                        <text x="200" y="222" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#C5A059" text-anchor="middle">
+                            Auditorium Venue | Native English MC & Judges
                         </text>
                     </svg>
                 </div>
             </article>
         </section>
 
-        <!-- 四大專業培育範疇 -->
-        <section id="services">
-            <div class="section-header">
-                <h2>專業培育範疇</h2>
-                <p>致力提升幼童綜合表達力與國際視野</p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>演說與語言表達</h3>
-                    <p>透過純正英語環境訓練，培養幼童語音語調、發音自信及臨場應變力。</p>
-                </div>
-                <div class="service-card">
-                    <h3>邏輯與思辨組織</h3>
-                    <p>引導學童建立故事架構，加強語言邏輯與組織思維。</p>
-                </div>
-                <div class="service-card">
-                    <h3>舞台展現與儀態</h3>
-                    <p>於標準演講廳進行公開演說，建立個人氣場與端莊肢體語言。</p>
-                </div>
-                <div class="service-card">
-                    <h3>國際賽事視野</h3>
-                    <p>與國際接軌的評審標準，為幼童建立具權威性的學術經歷。</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 登記流程 -->
-        <section>
-            <div class="section-header">
-                <h2>參賽流程簡介</h2>
-                <p>流程清晰，維護良善賽事秩序</p>
-            </div>
-
-            <div class="steps-container">
-                <div class="step-item">
-                    <div class="step-number">1</div>
-                    <h3>提交預約表單</h3>
-                    <p>填寫學童資料及觀眾門票需求，鎖定演講廳預留席位。</p>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">2</div>
-                    <h3>現場報到與辦理</h3>
-                    <p>於比賽當日前往演講廳現場辦理報到及繳付費用。</p>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">3</div>
-                    <h3>賽事與頒獎典禮</h3>
-                    <p>進行 2 分鐘演說，參加現場頒獎典禮並領取參與證書。</p>
-                </div>
-            </div>
-        </section>
-
         <!-- 常見問題 FAQ -->
         <section id="faq">
             <div class="section-header">
-                <h2>賽事須知與常見問題</h2>
-                <p>提供客觀權威的賽事解答，方便家長提前準備</p>
+                <h2>常見問題</h2>
+                <p>賽事相關的常見查詢說明</p>
             </div>
 
             <div class="faq-grid">
                 <div class="faq-item">
-                    <h3>Q: 評審團隊之背景為何？</h3>
-                    <p>答：本賽事邀請外籍司儀現場主持，並由外籍專業評判團現場評分，確保語言環境純正，給予學童國際標準的口語點評。</p>
+                    <h3>Q: 賽事語言與故事主題有何規定？</h3>
+                    <p>答：每位參賽者發言限時 2 分鐘，必須使用英語進行。故事題材不設限制。</p>
                 </div>
                 <div class="faq-item">
-                    <h3>Q: 比賽時間與故事題材有何限制？</h3>
-                    <p>答：演說時間限制為 2 分鐘，全程須以英語進行。故事題材不設限制，學童可自由挑選經典童話、繪本或自編故事。</p>
+                    <h3>Q: 港鐵廣告刊登安排詳情？</h3>
+                    <p>答：獲得冠軍及亞軍的參賽者，其相片將由大會安排刊登於港鐵廣告，展示位置及具體排期將於賽後通知。</p>
                 </div>
                 <div class="faq-item">
-                    <h3>Q: 冠軍與亞軍之港鐵廣告展示安排？</h3>
-                    <p>答：獲得冠軍及亞軍之參賽學童，其現場高畫質精彩照片將安排登上港鐵廣告展示。展示之具體站點與期數，將於頒獎典禮後專人對接通知。</p>
+                    <h3>Q: 現場攝影照片如何獲取？</h3>
+                    <p>答：演講廳現場將有專業攝影師拍攝比賽過程，賽事結束後大會將提供照片下載連結。</p>
                 </div>
                 <div class="faq-item">
-                    <h3>Q: 費用辦理與門票安排？</h3>
-                    <p>答：參賽費用為 HK$565，觀眾門票為每張 HK$280。為確保現場秩序，本系統僅作席位預約，所有費用均於比賽當日現場報到時繳交。</p>
+                    <h3>Q: 費用繳交方式？</h3>
+                    <p>答：參賽費用（HKD $565）及觀衆門票（HKD $280/張）統一於比賽當天現場報到時繳交。</p>
                 </div>
             </div>
         </section>
@@ -761,50 +564,49 @@
         <!-- 報名表單區塊 -->
         <section id="register">
             <div class="registration-section">
-                <div class="section-header" style="margin-bottom: 2rem;">
-                    <h2>賽事預約登記</h2>
-                    <p>演講廳席位有限，請填寫以下資料進行名額預留。</p>
+                <div class="section-header" style="margin-bottom: 1.8rem;">
+                    <h2>參賽預約表格</h2>
+                    <p>名額有限，請填寫以下資料以預留名額。</p>
                 </div>
 
-                <form action="https://api.web3forms.com/submit" method="POST" aria-label="賽事預約表單">
+                <form action="https://api.web3forms.com/submit" method="POST" aria-label="賽事報名表單">
                     <input type="hidden" name="access_key" value="c4925121-bf57-490f-872e-09fb857c964d">
-                    <input type="hidden" name="subject" value="【啓睿會】K2英語2分鐘即場故事比賽登記通知">
+                    <input type="hidden" name="subject" value="【啓睿會】K2英語即場講故事比賽報名登記">
 
                     <div class="form-group">
-                        <label for="parentName">家長 / 監護人姓名 *</label>
-                        <input type="text" id="parentName" name="parentName" placeholder="請輸入姓名" required aria-required="true">
+                        <label for="parentName">家長姓名 *</label>
+                        <input type="text" id="parentName" name="parentName" placeholder="請輸入姓名" required>
                     </div>
 
                     <div class="form-group">
                         <label for="childName">參賽學童姓名 (K2) *</label>
-                        <input type="text" id="childName" name="childName" placeholder="請輸入學童中文或英文姓名" required aria-required="true">
+                        <input type="text" id="childName" name="childName" placeholder="請輸入學童姓名" required>
                     </div>
 
                     <div class="form-group">
                         <label for="email">聯絡電郵 *</label>
-                        <input type="email" id="email" name="email" placeholder="example@email.com" required aria-required="true">
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
                     </div>
 
                     <div class="form-group">
                         <label for="phone">聯絡電話 / WhatsApp *</label>
-                        <input type="tel" id="phone" name="phone" placeholder="9123 4567" required aria-required="true">
+                        <input type="tel" id="phone" name="phone" placeholder="8 位數電話號碼" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="tickets">預留觀衆門票數量 (HK$280 / 張) *</label>
-                        <select id="tickets" name="tickets" required aria-required="true">
-                            <option value="1張">1 張觀眾門票 (HK$280)</option>
-                            <option value="2張" selected>2 張觀眾門票 (HK$560)</option>
-                            <option value="3張">3 張觀眾門票 (HK$840)</option>
-                            <option value="4張">4 張觀眾門票 (HK$1,120)</option>
-                            <option value="僅參賽不額外購票">僅參賽（不預留觀衆門票）</option>
+                        <label for="tickets">觀衆門票預訂數量 (HKD $280/張) *</label>
+                        <select id="tickets" name="tickets" required>
+                            <option value="1張">1 張門票 ($280)</option>
+                            <option value="2張" selected>2 張門票 ($560)</option>
+                            <option value="3張">3 張門票 ($840)</option>
+                            <option value="僅參賽不購票">僅參賽（不預訂觀衆門票）</option>
                         </select>
                     </div>
 
-                    <button type="submit" class="btn-primary" style="width: 100%; font-size: 1.05rem; padding: 0.9rem;">提交席位預約登記</button>
+                    <button type="submit" class="btn-primary" style="width: 100%; font-size: 1rem; padding: 0.9rem;">提交預約申請（費用於比賽當天現場繳交）</button>
 
                     <p class="form-notice">
-                        提交表單即視為完成名額預留。參賽費（HK$565）及門票費用將於賽事當日現場辦理。個人資料僅供本次賽事聯絡用途。
+                        提交表單即完成名額預留，相關費用（參賽費 $565 及門票費用）於比賽當日現場繳付。
                     </p>
                 </form>
             </div>
@@ -814,10 +616,7 @@
     <!-- 頁尾 -->
     <footer>
         <h3>啓睿會 Vanguard Society</h3>
-        <p>專業學術與尖子培育機構</p>
-        <p style="margin-top: 0.8rem; font-size: 0.9rem;">
-            查詢電郵：<a href="mailto:info@vanguardsociety-edu-hk.org">info@vanguardsociety-edu-hk.org</a>
-        </p>
+        <p>查詢電郵：<a href="mailto:info@vanguardsociety-edu-hk.org">info@vanguardsociety-edu-hk.org</a></p>
         <div class="copyright">
             &copy; 2026 啓睿會 Vanguard Society. 版權所有。
         </div>
